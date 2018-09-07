@@ -7,13 +7,18 @@ h1{
     text-align: center;
     border: 5px solid olivedrab;
 }
-.box {
-
+.box {width: 20%;
+    float: left;
 	border: 2px solid darkblue;
 	padding-left: 10px;
 }
-.box2 {
+.box2 { width:78.2%;
+    float: right;
   border: 2px solid red;
 }
+.box3{clear:both;}
 
-
+.box4{border: 2px solid darkblue;
+width: 78.2%;
+float: right;
+height: 395px}
