@@ -13,11 +13,21 @@ img{
     height:150px;
 }
 #box {
+    text-align: left;
+    padding: 10px;
+    float:left;
+    margin-right: 10px;
     border-radius: 5px;
     background-color: rgb(207,232,220);
 }
-#box2 {
+#box2 {margin-left: 10px;
+    float: right;
+    padding: 10px;
     border-radius: 5px;
     background-color: rgb(207,232,220);
+    text-align: right;
 }
 
+.aligner {
+text-align:right;
+}
