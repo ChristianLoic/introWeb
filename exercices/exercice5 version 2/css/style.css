@@ -10,17 +10,30 @@ nav
 {
 	width : 15% ;
 	border : 1px solid blue ;
-	vertical-align: top;
-	display:inline-block;
+	display: inline-block;
+    margin-right: 5%;
+    vertical-align: top;
+
+
 }
-section
-{
-	border : 1px solid blue ;
-	width: 55%;
-	/*margin-left: 300px;*/
-	display:inline-block;
-	text-align: center;
-	margin-left: 5%;
+section {
+    display: inline;
+    width: 90%;
+}
+article{
+     border: 1px solid green;
+    text-align: center;
+    display: inline-block;
+    width: 33%;
+    margin-right: 2%;
+}
+aside{
+       border:1px solid red;
+      text-align: center ;
+    display: inline-block;
+    width: 33%;
+    vertical-align: top;
+
 
 }
 footer
