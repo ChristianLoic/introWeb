@@ -182,8 +182,12 @@ div{
 	 width: 25%;
  }
  table{
-	 color: darkblue;
+
 	 margin-left: 20%;
 	 border: 5px solid red  ;
 	 border-collapse: collapse;
+	 width: 40%;
  }
+td{border:5px solid red ;}
+
+th{border:5px solid blue;}
