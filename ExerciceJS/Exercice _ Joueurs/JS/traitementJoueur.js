@@ -30,6 +30,15 @@ var   Nom, Points;
 }
 function btnTrouverMoy_onclick()
 {
+   var moy;
+   moy=TrouverMoy();
+    document.getElementById("lblReponse").innerHTML=("la moyenne est :"+moy);
+
+
+
+}
+function TrouverMoy()
+{
     var Moy , TotPoints;
     Moy=0;
     TotPoints=0;
@@ -37,42 +46,56 @@ function btnTrouverMoy_onclick()
     {
         TotPoints+=TabPoint[i];
     }
-    moy=TotPoints/4;
-    document.getElementById("lblReponse").innerHTML=("la moyenne est :"+moy);
+    Moy=TotPoints/4;
+    return Moy;
 }
  function btnTrouverMeilleur_onclick()
  {
-     var  max ;
-     max=0;
 
-     for(i=0;i<=TabPoint.length;i++)
-     {
-         if(max<TabPoint[i])
-         {
-             max=TabPoint[i];
-         }
+     var Max;
+     Max=TrouverMoy();
 
-     }
 
-     document.getElementById("lblReponse").innerHTML=("le meilleur pointage  est :"+max);
+     document.getElementById("lblReponse").innerHTML=("le meilleur pointage  est :"+Max);
 
  }
- function btnTrouverPire_onclick()
+function TrouverMoy()
+{
+    var  max ;
+    max=0;
+
+    for(i=0;i<=TabPoint.length;i++)
+    {
+        if(max<TabPoint[i])
+        {
+            max=TabPoint[i];
+        }
+
+    }
+return max;
+}
+
+function btnTrouverPire_onclick()
  {
-     var  pire;
-     pire=0;
-     for(i=0;i<=TabPoint.length;i++)
-     {
+      var Pire;
+      Pire=TrouverPire();
 
-         if(pire>TabPoint[i])
-         {
-             pire=TabPoint[i];
-         }
 
-     }
-
-     document.getElementById("lblReponse").innerHTML=("le pire pointage  est :"+pire);
+     document.getElementById("lblReponse").innerHTML=("le pire pointage  est :"+Pire);
  }
+function TrouverPire()
+{
+    var pire;
+    pire = 0;
+    for (i = 0; i <= TabPoint.length; i++) {
+
+        if (pire > TabPoint[i]) {
+            pire = TabPoint[i];
+        }
+
+    }
+    return pire;
+}
 
  function btnRechercher_onclick()
  { var  Trouve,Nbre,Joueur ;
