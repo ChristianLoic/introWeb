@@ -47,8 +47,10 @@ function valideChampsObligatoires()
     var tabNomid= new Array("txtNbre1","txtNbre2","txtOperateur");
     for(i=0;i<tabNomid.length;i++)
     {
-        (valideExiste(tabNomid[i])===true);
-          valide=true;
+        if((valideExiste(tabNomid[i])===true))
+        {
+            valide = true;
+        }
     }
     return valide;
 
